@@ -4,13 +4,13 @@ import BackgroundVideo from "../videos/black.mp4";
 import Home2 from "./home2";
 import test from "../images/test1.png"
 import React, { useEffect, useState } from "react";
-const styles = {
-  web_heading: {
-        left:'10em',
-        top:'2em',
+// const styles = {
+//   web_heading: {
+//         left:'10em',
+//         top:'2em',
         
-  },
-}
+//   },
+// }
 
 
 

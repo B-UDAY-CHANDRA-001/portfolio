@@ -10,7 +10,6 @@ import Resume from './pages/resume';
 import Hobbies from './pages/hobbies';
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home2 from "./pages/home2";
 function App() {
   return (
     <Router>

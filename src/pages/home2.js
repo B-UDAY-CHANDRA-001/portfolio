@@ -8,8 +8,6 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer" >
       <Row style={{justifyContent:"center"}}>
