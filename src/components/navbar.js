@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../images/nav_logo.png";
+import logo from "../images/final_logo.png";
 // import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
@@ -38,6 +38,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/portfolio">
+          {/* <img src={logo1} className="img-fluid logo" alt="brand" /> */}
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
