@@ -12,31 +12,17 @@ html {
     );
   
     --imp-text-color: #c770f0;
+    --green-color: #06af3e;
   }
   
   .purple {
     color: var(--imp-text-color) !important;
   }
-  
-  /* --------- */
-  /*  Preloader */
-  /* --------- */
-  /* #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    background-color: #0c0513;
-    background-image: url(./images/);
-    background-repeat: no-repeat;
-    background-position: center;
-  } */
-
-  #preloader-none {
-    opacity: 0;
+  .green{
+    color: var(--green-color) !important;
   }
+  
+  
   
   #no-scroll {
     overflow: hidden;
@@ -53,18 +39,18 @@ html {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #2d1950;
+    background: #4f4f50;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #f66aebf7;
+    background: #140e18f7;
     border-radius: 12px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(222, 130, 235, 0.911);
+    background: rgba(33, 23, 34, 0.911);
     border-radius: 12px;
   }
   
@@ -501,13 +487,63 @@ html {
   /* --------- */
   /* About */
   /* --------- */
-  
-  .about-section {
-    position: relative !important;
-    padding-top: 150px !important;
-    padding-bottom: 30px !important;
-    background-image: var(--section-background-color) !important;
+
+  .about-section1 {
+    position: flex;
+    flex-direction: column;
+    padding-top: 10em;
+  }
+
+  .about-body {
+    text-align: center;
+    font-size: 2em !important;
+    font-family: sans-serif;
     color: white !important;
+    padding-bottom: 2px;
+  }
+  .about-body-mobile {
+    text-align: center;
+    font-size: 1em !important;
+    font-family: sans-serif;
+    color: white !important;
+    padding-bottom: 2px;
+  }
+.about-quote{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  color: rgb(141, 31, 136);
+  letter-spacing: 1.5px;
+
+}
+
+.about-heading{
+  text-align: left;
+  padding-left: 4em;
+  font-family: sans-serif;
+  color: whitesmoke;
+  padding-bottom: 2px;
+
+}
+
+.about-ul{
+  text-align: left;
+  padding-left: 4em;
+  font-family: sans-serif;
+  color: whitesmoke;
+  padding-bottom: 2px;
+  font-size: medium;
+
+}
+
+  
+   .about-sub {
+    text-align: center;
+    font-size: 2em !important;
+    font-family: sans-serif;
+    color: rgba(240, 245, 243, 0.637) !important;
+    padding-top: 2em;
+
   }
   
   .tech-icons {
@@ -515,14 +551,15 @@ html {
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    border: 1.7px solid rgb(0, 0, 0) !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 89, 90, 0.137) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
+    color: rgb(219, 215, 215);
   }
   
   @media (max-width: 767px) {
@@ -534,7 +571,7 @@ html {
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+    border: 2.2px solid rgba(159, 158, 160, 0.883) !important;
   }
   .tech-icon-images {
     padding: 20px !important;
@@ -557,7 +594,7 @@ html {
     .about-img {
       padding-top: 0 !important;
     }
-  }
+  } 
   /* --------- */
   /* Resume */
   /* --------- */
