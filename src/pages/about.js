@@ -2,9 +2,15 @@ import React, { useEffect, useState } from "react";
 import UseAnimations from 'react-useanimations';
 import arrowDown from 'react-useanimations/lib/arrowDown'
 import Skills from "./skills";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({duration:2000});
+  },[]);
   const [isDesktop,setDesktop] = useState(window.innerWidth > 787)
   const updateMedia = () =>{
     setDesktop(window.innerWidth >767); 
@@ -18,7 +24,7 @@ useEffect(() => {
 return(
   <div>
     {isDesktop ? (
-      <div>
+      <div data-aos = "fade-down">
         <div  className="about-section1" >
           <h1 className = "about-body">
             Hi Everyone, I am <strong class="purple">Uday Chandra </strong>
@@ -31,7 +37,7 @@ return(
         <div display="flex">
           <br/><br/>
           <h1 className = "about-body" >Ambivert Person | E-Sports | Physical Fitness | Health Freak | Adventurous </h1>
-            <br /><br/><br/><br/><br/>
+            <br /><br/><br/>
             <p class="about-quote"><strong>Motivation is what gets you started, Habit is what keeps you going.</strong></p>
 
            
