@@ -29,7 +29,7 @@ return(
           <h1 className = "about-sub" > <strong class="purple">About me :</strong></h1>
           <h1 className="about-body">Hello, My name is <strong>Uday.</strong> I'm from India.An enthusiastic fresher with highly motivated 
           and leadership skills having bachelors of engineering degree in Computer Science. My passion for engineering and tech has 
-          been increased day by day.</h1>
+          been increased day by day..</h1>
         
           <h1  data-aos = "fade-up" className = "about-sub" > <strong class="purple">Education : </strong></h1>
           <h2  data-aos = "fade-up" className="about-body"><strong>B.Tech in Computer Science & Engineering</strong> 
