@@ -8,7 +8,7 @@ import {
     SiHeroku,
     SiPycharm,
     SiPython,SiDjango,SiReact,SiTensorflow,SiHtml5,
-    SiCsswizardry,SiCloudera,SiFlask,SiMysql,SiScikitlearn
+    SiCsswizardry,SiCloudera,SiFlask,SiMysql,SiScikitlearn,SiGooglecloud
   } from "react-icons/si";
 import {ImDatabase} from "react-icons/im"
 import Aos from "aos";
@@ -30,11 +30,10 @@ const Skills = () =>{
     });
 
     return(
-        <div>
+        <div>            
             {isDesktop ?(
-                
-                <div>
-                    <h1 className="about-sub"><i>Teck Stack</i></h1>
+                <div style={{paddingLeft:"5em", paddingRight:"5em"}}>
+                    <h1 className="skill-sub"><strong class="purple">Technologies I'm familiar with: </strong></h1>
                     <Row data-aos = "fade-up" style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         <Col  xs={4} md={2} className="tech-icons" >
                             <SiPython />
@@ -82,8 +81,12 @@ const Skills = () =>{
                         </Col>
                     </Row>
 
-                    <h1 className="about-sub"><i>Tools I use</i></h1>
+                    <h1 className="skill-sub"><strong class="purple">Tools I'm familiar with: </strong></h1>
                     <Row data-aos = "fade-up" style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                    <Col xs={4} md={2} className="tech-icons">
+                            <SiGooglecloud />
+                            <p style={{fontSize:"0.3em"}}>GCP</p>
+                        </Col>
                         <Col xs={4} md={2} className="tech-icons">
                             <SiVisualstudiocode />
                             <p style={{fontSize:"0.3em"}}>VScode</p>
@@ -109,14 +112,15 @@ const Skills = () =>{
                             <p style={{fontSize:"0.3em"}}>Postman</p>
                         </Col>
                     </Row>
+                    <br/><br/>
                 </div>
 
 // --------------------------------------------------mobile------------------------------------------------------------------
 
             ):(
 
-                <div>
-                    <h1 className="about-sub"><i>Teck Stack</i></h1>
+                <div style={{paddingLeft:"1em", paddingRight:"1em"}}>
+                    <h1 className="skill-sub-mobile"><strong class="purple">Technologies I'm familiar with: </strong></h1>
                     <Row data-aos = "fade-up" style={{ justifyContent: "center", paddingBottom: "50px" }}>
                         <Col data-aos = "fade-left" xs={4} md={2} className="tech-icons">
                             <SiPython />
@@ -164,8 +168,12 @@ const Skills = () =>{
                         </Col>
                     </Row>
 
-                    <h1 className="about-sub"><i>Tools I use</i></h1>
+                    <h1 className="skill-sub-mobile"><strong class="purple">Tools I'm familiar with: </strong></h1>
                     <Row data-aos = "fade-up" style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                        <Col data-aos = "fade-left"xs={4} md={2} className="tech-icons">
+                            <SiGooglecloud />
+                            <p style={{fontSize:"0.3em"}}>GCP</p>
+                        </Col>
                         <Col data-aos = "fade-left"xs={4} md={2} className="tech-icons">
                             <SiVisualstudiocode />
                             <p style={{fontSize:"0.3em"}}>VScode</p>

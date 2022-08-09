@@ -1,22 +1,18 @@
-// import { width } from 'dom-helpers';
-// import React from 'react';
-import BackgroundVideo from "../videos/black.mp4";
-import Home2 from "./home2";
+
+import Footer from "./footer";
+import About from "./about"
 import test from "../images/test1.png"
 import React, { useEffect, useState } from "react";
-// const styles = {
-//   web_heading: {
-//         left:'10em',
-//         top:'2em',
-        
-//   },
-// }
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import Button from 'react-bootstrap/Button';
 
 
 const Home = () => {
-
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 767);
+  useEffect(() => {
+    Aos.init({duration:2000});
+  },[]);
+const [isDesktop, setDesktop] = useState(window.innerWidth > 767);
 const updateMedia = () => {
   setDesktop(window.innerWidth > 767);
 };
@@ -30,68 +26,27 @@ useEffect(() => {
   return (
     <div >
       {isDesktop ? (
-        <div>
-          <video
-            autoPlay loop muted
-            style={{
-              position: "absolute",
-              width: "100%",
-              left : "50%",
-              top : "50%",
-              height : "100%",
-              objectFit : "cover",
-              transform : "translate(-50%, -50%)",
-              zIndex: "-1"
-
-
-            }}
-          
-            >
-            <source src = {BackgroundVideo} type = "video/mp4"/> 
-          </video>
-          
-            
-          
-          <div  style={{ display:'flex'}}>
+        <div >
+          <div data-aos = "fade-down" style={{ display:'flex'}}>
             <img  className="myAvtar" src = {test} alt="avtar" />
             <h1  className="home-content"><span > Hi There ..! </span><br/><br/> I'M 
-            <br/><strong class="purple">UDAY CHANDRA BHOOKYA</strong>
-            <br/><strong>Computer Science Engineer</strong>
+              <br/><strong class="purple">UDAY CHANDRA BHOOKYA</strong>
+              <br/><strong>Computer Science Engineer</strong>
+              <h3>Indian Institute of Information Technology Tiruchirappalli</h3>
+              <Button variant="primary" 
+                onClick={()=> window.open("https://drive.google.com/file/d/11xx9QVAvVbNK6yhoZ_i5ofz1z-uafiqF/view?usp=sharing", "_blank")}>
+                View Resume</Button>
             </h1>
-            
-           
-          <Home2/>
-            
+
           </div>
+          <About/>
+          <Footer/>
           
-          
-          
-        
-        
           
         </div>
       ) : //mobie view-----------------------------------------------------------
       (
         <div>
-          <video
-            autoPlay loop muted
-            style={{
-              position: "absolute",
-              width: "100%",
-              left : "50%",
-              top : "50%",
-              height : "100%",
-              objectFit : "cover",
-              transform : "translate(-50%, -50%)",
-              zIndex: "-1"
-
-
-            }}
-          
-            >
-            <source src = {BackgroundVideo} type = "video/mp4"/> 
-          </video>
-          
           <div  style={{ display:'flex' , flexDirection: 'column'}}>
             <img  className="myAvtar_mobile" src = {test} alt="avtar" />
             <h1  className="home-content-mobile"><span class="purple">  Hi There ..! </span><br/><br/> I'M <br/>
@@ -100,8 +55,8 @@ useEffect(() => {
             
           </div>
           
-
-          <Home2/>
+          <About/>
+          <Footer/>
 
         </div>
       )}
