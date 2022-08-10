@@ -258,7 +258,7 @@ const Projects = () => {
               />
               <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                Multiplayer game which takes real time images to detects and classifies them.
+                Individual player score prediction for IPL2020.
                 </Typography>
               </CardContent>
 

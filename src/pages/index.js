@@ -52,7 +52,9 @@ useEffect(() => {
             <h1  className="home-content-mobile"><span class="purple">  Hi There ..! </span><br/><br/> I'M <br/>
             <strong class="purple">UDAY CHANDRA B</strong>
             <br/><br/><strong>Computer Science Engineer</strong></h1>
-            
+            <Button variant="primary"  style={{fontFamily:"sans-serif", alignSelf:"center"}}
+                onClick={()=> window.open("https://drive.google.com/file/d/11xx9QVAvVbNK6yhoZ_i5ofz1z-uafiqF/view?usp=sharing", "_blank")}>
+                View Resume</Button>
           </div>
           
           <About/>
