@@ -45,6 +45,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+              // updated id
                 href="https://www.instagram.com/_udaychandra/"
                 style={{ color: "white" }}
                 target="_blank" 
