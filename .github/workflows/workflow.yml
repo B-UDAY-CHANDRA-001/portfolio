@@ -11,16 +11,16 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16]
+        node-version: [14]
     steps:
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16  # Use the version that your project supports
+          node-version: 14  # Use the version that your project supports
       - name: Use Node.js with nvm
         run: |
-          npm install 16
+          npm install 14
 
       - name: Install OpenSSL
         run: sudo apt-get install -y openssl
