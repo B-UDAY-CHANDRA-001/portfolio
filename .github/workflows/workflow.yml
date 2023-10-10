@@ -11,17 +11,13 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [16]
     steps:
 
       - name: Install OpenSSL
         run: sudo apt-get install -y openssl
       - name: Debug Info
-        run: openssl version- name: Debug Info
-        run: |
-          node -v
-          npm -v
-          openssl version
+        run: openssl version
 
       - name: Checkout
         uses: actions/checkout@v1
