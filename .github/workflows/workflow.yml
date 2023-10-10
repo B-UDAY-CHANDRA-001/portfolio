@@ -20,8 +20,8 @@ jobs:
           node-version: 16  # Use the version that your project supports
       - name: Use Node.js with nvm
         run: |
-          nvm install 16
-          nvm use 16
+          npm install 16
+          npm use 16
 
       - name: Install OpenSSL
         run: sudo apt-get install -y openssl
