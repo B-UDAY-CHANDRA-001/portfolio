@@ -14,7 +14,10 @@ jobs:
         node-version: [18]
     steps:
 
+      - name: Install OpenSSL
+        run: sudo apt-get install -y openssl
       - name: Debug Info
+        run: openssl version- name: Debug Info
         run: |
           node -v
           npm -v
