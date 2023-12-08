@@ -53,7 +53,7 @@ return(
           <h2  data-aos = "fade-up" className="about-body"><strong>Full-Stack Developer Intern</strong> <span><p 
           style={{opacity:"70%",fontSize:"0.7em"}}>May 2021 – July 2021</p></span>
             <Button style={{opacity:"70%",color:"aqua",fontSize:"1em",textDecoration:"underline"}}variant="https://financepeer.com/">
-              Financepeer</Button>
+              LEO1-Financepeer</Button>
             
           </h2>
           <p  data-aos = "fade-up" className="about-body" >
