@@ -48,7 +48,7 @@ return(
           </h2>
             
               {/* Experience */}
-
+                                
           <h1  data-aos = "fade-up" className = "about-sub" > <strong class="purple">Exprience : </strong></h1>
           <h2  data-aos = "fade-up" className="about-body"><strong>Full-Stack Developer Intern</strong> <span><p 
           style={{opacity:"70%",fontSize:"0.7em"}}>May 2021 – July 2021</p></span>
